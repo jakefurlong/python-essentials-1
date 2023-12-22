@@ -12,8 +12,8 @@ Test your code using the data below.
 
 ## Test data
 
+```
 Sample input: 10000
-
 Expected output: The tax is: 1244.0 thalers
 
 Sample input: 100000
@@ -24,6 +24,7 @@ Expected output: The tax is: 0.0 thalers
 
 Sample input: -100
 Expected output: The tax is: 0.0 thalers
+```
 
 ## Code
 
