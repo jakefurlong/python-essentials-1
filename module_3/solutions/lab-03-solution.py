@@ -14,7 +14,7 @@ tax = pit(income)
 
 print(f"The tax is: {tax} thalers")
 
-# driver code
+# Driver code
 
 print('\nRunning units tests...')
 
