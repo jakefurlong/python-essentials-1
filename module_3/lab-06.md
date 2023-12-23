@@ -18,9 +18,9 @@ Note that the code below contains two elements which may not be fully clear to y
 
 For the time being, we'd just like you to know that we've imported the time module and used the sleep() method to suspend the execution of each subsequent print() function inside the for loop for one second, so that the message outputted to the console resembles an actual counting. Don't worry - you'll soon learn more about modules and methods.
 
-# Code
+## Code
 
-```
+```python
 import time
 
 # Write a for loop that counts to five.
