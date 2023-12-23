@@ -12,13 +12,42 @@ print(f'{n} >= 100 is', is_greater_than_100(n))
 
 # Driver code
 
-print('\nRunning unit tests...')
-  
-test_numbers = [55, 99, 100, 101, -5, +123]
+print('\nRunning units tests...')
 
-def unit_test(test_numbers):
-    for i in test_numbers:
-        response = is_greater_than_100(i)
-        print(f'{i} >= 100 is {response}')
+submit_cases = [
+    (55, False),
+    (99, False),
+    (100, True),
+    (101, True),
+    (-5, False),
+    (+123, True)
+]
 
-unit_test(test_numbers)
+def test(input, expected_output):
+    print("---------------------------------")
+    print(f"Input: {input}")
+    print(f"Expecting: {expected_output}")
+    result = is_greater_than_100(input)
+    print(f"Actual: {result}")
+    if result == expected_output:
+        print("Pass")
+        return True
+    print("Fail")
+    return False
+
+def main():
+    passed = 0
+    failed = 0
+    for test_case in submit_cases:
+        correct = test(*test_case)
+        if correct:
+            passed += 1
+        else:
+            failed += 1
+    if failed == 0:
+        print("============= PASS ==============")
+    else:
+        print("============= FAIL ==============")
+    print(f"{passed} passed, {failed} failed")
+
+main()
